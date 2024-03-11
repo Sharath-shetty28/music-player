@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Gilroy';
+    color: aliceblue;
+ }
+html,body{
+     height:100%;
+     width:100%;
+}
+.main{
+
+    height: 85%;
+    width: 100%;
+    background-color:#231414;
+    display: flex;
+    padding: 5vw 8vw;
+    
+}
+.left{
+    height: 100%;
+    width: 45%;
+    background-color: #b44949;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/80/Anirudh_Ravichander_Dec_2023.jpg); */
+    background-size:cover ;
+    background-position: center;
+
+}
+.right{
+    height: 100%;
+    width: 55%;
+    /* background-color: blue; */
+    padding: 0 1.7vw;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+}
+.right h3{
+    font-size: 25px;
+}
+.allsong{
+    /* background-color: red; */
+    height: 85%;
+    margin-top: 15px;
+}
+.songcard:hover{
+    background-color: rgb(131, 121, 121);
+    cursor: pointer;
+}
+.songcard{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ada1a1;
+    padding: 10px 10px;
+
+}
+.songcard:nth-last-child(1){
+   border-bottom: 1px solid #ada1a1;
+}
+.songcard .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.songcard img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.songcard h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.songcard h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+.player{
+    height: 15%;
+    width: 100%;
+    background-color:  red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.player h3{
+    background-color: black;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player h3 i{
+    font-size: 20px;
+}
+.player h3:active{
+    scale: 0.93;
+}
